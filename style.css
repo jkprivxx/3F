@@ -1,1 +1,16 @@
+:root{
+    --cor-de-fundo:#1e1e1e;
+    --verde: #6FFF57;
+    --braco:#ffffff;
+    --botao-ativo: #3A375E;
+    --botao-initivo:rgba(58,55,94,0.5);
+    --texto-fundo:rgba(58,55,94,0.3);
 
+}
+
+*{
+    background-color: var(--cor-de-fundo);
+    color: var(--braco);
+    font-style: italic;
+    font-size: 27px;
+}
