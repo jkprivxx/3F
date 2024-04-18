@@ -11,6 +11,15 @@
 *{
     background-color: var(--cor-de-fundo);
     color: var(--braco);
-    font-style: italic;
-    font-size: 27px;
+
+}
+span{
+    color:  var(--verde);
+}
+.conteudo-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
