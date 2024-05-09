@@ -40,3 +40,25 @@ span{
     border-bottom: left 2px solid var(--botao-ativo);
     border-bottom: 2px solid var(--botao-ativo);
 }
+.botoes{
+    display: block;}
+
+.botao:first-child{ 
+    border-radius: 20px 20px 0 0;
+
+}
+.botao:last-child{
+border-radius: 0 0 20px 20px;
+}
+
+@media screen and (min-width: 700px){
+    .botoes {
+        display: flex;
+    }
+    .botao:last-child{
+        border-radius: 0 20px 20px 0;
+    }
+    .botao:first-child{
+        border-radius: 20px 0 0 20px;
+    }
+}
