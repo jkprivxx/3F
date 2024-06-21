@@ -1,16 +1,23 @@
 const botoes = document.querySelectorAll(".botao");
 const conteudo = document.querySelectorAll(".abaconteudo");
 const contador = document.querySelectorAll(".contador");
-contador[0].textContent="ola"
-const tempoObjetivo1 = new Date(2024,10,21,19,15);
-const tempoObjetivo2 = new Date(2025,10,11,18,05);
-const tempoObjetivo3 = new Date(2024,10,25,10.10);
-const tempoObjetivo4 = new Date(2025,05,22,00,00);
-let agora = new Date()
-contador[0].textContent= tempoObjetivo1 - "agora"
-contador[1].textContent= tempoObjetivo2 - "agora"
-contador[2].textContent= tempoObjetivo3 - "agora"
-contador[3].textContent= tempoObjetivo4 - "agora"
+const tempoObjetivo1 = new Date (2025,03,15);
+const tempoObjetivo2 = new Date (2025,05,15);
+const tempoObjetivo3 = new Date (2025,08,15);
+const tempoObjetivo4 = new Date (2025,10,15);
+let agora = new Date();
+let segundos
+let minutos
+let horas
+let dias
+segundos = (tempoObjetivo1-agora)/1000;
+minutos = segundos/60;
+horas = minutos/60;
+dias = horas/24;
+contador[0].textContent = `faltam ${ dias}dias, ${horas }horas, ${minutos}minutos e ${segundos}segundos´
+contador[1].textContent = tempoObjetivo2 - agora
+contador[2].textContent = tempoObjetivo3 - agora
+contador[3].textContent = tempoObjetivo4 - agora
 
 
 for (let i = 0; i < botoes.length; i++){
@@ -25,7 +32,4 @@ for (let i = 0; i < botoes.length; i++){
 
 
     }
-}
-
-
-
+}    
